@@ -1,0 +1,256 @@
+1.Method overloading is a two or more method with same name with different  parameters.
+
+class Job{
+
+
+String name;
+int exp;
+String jobType;
+
+   
+    void apply()
+{ 
+   System.out.println("invoking apply in job");
+}
+    void apply(String name)
+{
+   String name="name";
+  System.out.println("name is:+name);
+}
+
+    void apply(String name,int exp)
+{    
+     System.out.println("invoking name,exp in apply");
+     int exp=exp;
+     System.out.println("exp is:"+exp+);
+}
+
+   void apply(String name,int exp,String jobType)
+{   
+     System.out.println("invoking name,exp,jobType in apply");
+     String jobType="jobType";
+     System.out.println("string name is:+name+"exp is:"+exp+"jobType is:"+jobType);
+}
+
+
+class JobRunner
+{
+  public static void main(String[] args)
+{
+  System.out.println("running the main in jobRunner");
+  
+  Job job=new Job();
+  System.out.println("invoke jo no-argument");
+
+  Job job1=new Job(shruti);
+  System.out.println("name is :"+name");
+
+  
+  Job job1=new Job(shruti,8);
+  System.out.println("name is :"+name+exp is:"+exp);
+
+    
+  Job job1=new Job(shruti,8,developer);
+  System.out.println("name is :"+name+exp is:"+exp+"jobType is:"+jobType);
+}
+
+}
+
+ 2.There are four types of variables in java
+
+   1.static variable
+   2.instance variable
+   3.local variable
+   4.paramere variable
+
+1.static variable:static variable is a kind of variable which is declared outside the main method and inside the class using static kryword.
+class A{
+   
+    static int exp;
+    static String name; 
+   public static void main(String[] args)
+{
+
+
+
+}
+
+}
+
+2.instance variable:Instance variable is a kind of variable which is declared outside the main method and inside the class.
+
+
+
+class A{
+   
+     int exp;
+     String name; 
+   public static void main(String[] args)
+{
+
+
+
+}
+
+}
+3.local variable:local variable is kind of variable which is declared inside the scope/inside the main method.
+
+
+
+
+class A{
+   
+     
+   public static void main(String[] args)
+{
+   System.out.println("invoking A in main method");
+   int exp;
+   String name; 
+
+}
+
+}
+
+ 4.paramere variable : Parameter variable is kind of variable which is declared inside the parantheses of the main-method.
+
+
+class A{
+   
+     
+   public static void main(int exp;
+   String name; )
+{
+   System.out.println("invoking A in main method");
+   
+}
+
+}
+
+7.class Park{
+	Park park1 = new Park("Kuvempu");
+		System.out.println("\n");
+		
+		Park park2 = new Park("Kuvempu","Davanagere");
+		System.out.println("\n");
+		
+		Park park3 = new Park("Kuvempu","Davanagere",10.0);
+		System.out.println("\n");
+		
+		Park park4 = new Park("Kuvempu","Davanagere",10.0,9.0);
+		System.out.println("\n");
+		
+		Park park5 = new Park("Kuvempu","Davanagere",10.0,9.0,4);
+		System.out.println("\n");
+4.Constructor overloading is special method there is no return type it is similar to class name it uses the new keyword.
+
+ 
+class Park{
+	String parkName;
+	String parkLocation;
+	double openingTime;
+	double closingTime;
+	int entryPointNumbers;
+	
+	
+	Park(String parkName){
+		String parkName ="abdul kalam" ;
+		System.out.println("parkName: " + parkName);
+	}
+	
+	Park(String parkName,String parkLocation){
+
+		String parkLocation = "karnatak";
+		System.out.println("parkLocation: " + parkLocation);
+	}
+	
+	Park(String parkName,String parkLocation,double openingTime){
+		
+		double openingTime = 8.30;
+		System.out.println("openingTime: " + openingTime + "am");
+	}
+	
+	Park(String parkName,String parkLocation,double openingTime,double closingTime){
+		
+		double closingTime = 5.30;
+		System.out.println("closingTime: " + closingTime + "pm");
+	}
+	
+	Park(String parkName,String parkLocation,double openingTime,double closingTime,int entryPointNumbers){
+
+		int entryPointNumbers = 6;
+		System.out.println("entryPointNumbers: " + entryPointNumbers);
+	}
+	
+	
+}
+
+class  ParkRunner{
+     public static void main(String[] args)
+{
+    Park park=new Park();
+    System.out.println(" park name is"+name);
+
+    Park park1=new Park();
+    System.out.println(" park name is"+name+"ParkLocation is"+parkLocation);
+
+    Park park2=new Park();
+    System.out.println(" park name is"+name+"ParkLocation is"+parkLocation+"openingtyme is:"+openingTyme);
+
+
+}
+
+
+
+3.stack :
+memory is managed for you
+similar in size
+access is easier and fast
+not flexible
+
+Heap : 
+
+larger in size
+memory management needs to be done manually
+slower access,allocation and declaration
+elements are globally accessible in the application
+
+5.class ButterFly{
+	static int legs;
+	static int wings;
+	int noOfAntena;
+	String digestiveTract;
+	
+    void instanceVarMethod(){
+		System.out.println("Number of Antena is :"+noOfAntena+"digestiveTract is:"+digestiveTract);
+	}
+	
+	static void staticVarMethod(){
+		System.out.println("no of leg is"+legs+"no of wings is"+wings);
+	}
+	
+	ButterFly(int noOfAntena, String digestiveTract){
+		this.noOfAntena = noOfAntena;
+		this.digestiveTract = digestiveTract;
+	}
+	
+	static{
+		legs = 6;
+		wings = 4;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
